@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: repeat(3, 1fr); */
+    gap: 20px;
+}
+img{
+    width: 100%;
+}
+img:hover{
+    box-shadow: 1px 1px 50px gray;
+}
+@media screen and (max-width: 425px) {
+    section{
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (min-width: 426px) and (max-width: 1023px) {
+    section{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
